@@ -3,6 +3,7 @@ package com.studio.tamer.gardenia;
 import com.studio.tamer.gardenia.blocks.ModdedBlocks;
 import com.studio.tamer.gardenia.blocks.WateringCanPotBlock;
 import net.fabricmc.api.ClientModInitializer;
+import net.fabricmc.fabric.api.client.model.loading.v1.ModelLoadingPlugin;
 import net.fabricmc.fabric.impl.blockrenderlayer.BlockRenderLayerMapImpl;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.resources.ResourceLocation;

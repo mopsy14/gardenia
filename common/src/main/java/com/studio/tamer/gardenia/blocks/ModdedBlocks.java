@@ -1,5 +1,7 @@
 package com.studio.tamer.gardenia.blocks;
 
+import com.studio.tamer.gardenia.blocks.glowingflower.GlowingFlowerBlock;
+import com.studio.tamer.gardenia.blocks.glowingflower.GlowingFlowerPotBlock;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.item.BlockItem;
@@ -16,6 +18,11 @@ import java.util.Set;
 public class ModdedBlocks {
     private static final BlockBehaviour.Properties DEFAULT_FLOWER_PROPS = BlockBehaviour.Properties.of().mapColor(MapColor.PLANT).ignitedByLava().noCollission().instabreak().sound(SoundType.GRASS).offsetType(BlockBehaviour.OffsetType.XZ).pushReaction(PushReaction.DESTROY).noOcclusion();
     private static final BlockBehaviour.Properties DEFAULT_FLOWER_POT_PROPS = BlockBehaviour.Properties.of().instabreak().noOcclusion().pushReaction(PushReaction.DESTROY);
+
+    private static final BlockBehaviour.Properties GLOWING_FLOWER_PROPS = BlockBehaviour.Properties.of().mapColor(MapColor.PLANT).ignitedByLava().noCollission().instabreak().sound(SoundType.GRASS).offsetType(BlockBehaviour.OffsetType.XZ).pushReaction(PushReaction.DESTROY).lightLevel(state -> 15).noOcclusion();
+    private static final BlockBehaviour.Properties GLOWING_FLOWER_POT_PROPS = BlockBehaviour.Properties.of().instabreak().noOcclusion().pushReaction(PushReaction.DESTROY).lightLevel(state -> 15);
+
+
     public static final Block BLOOD_POPPY = new FlowerBlock(MobEffects.NIGHT_VISION, 5, DEFAULT_FLOWER_PROPS);
     public static final Block BLOOD_POPPY_POT = new FlowerPotBlock(BLOOD_POPPY, DEFAULT_FLOWER_POT_PROPS);
     public static final Block BLOOD_POPPY_CAN = new WateringCanPotBlock(BLOOD_POPPY);
