@@ -9,10 +9,7 @@ import net.minecraft.client.renderer.BiomeColors;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.GrassColor;
-import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.FlowerBlock;
-import net.minecraft.world.level.block.FlowerPotBlock;
-import net.minecraft.world.level.block.TallFlowerBlock;
+import net.minecraft.world.level.block.*;
 
 import java.util.Map;
 
@@ -30,6 +27,6 @@ public class FabricGardeniaClient implements ClientModInitializer {
                                 blockAndTintGetter != null && blockPos != null ?
                                         BiomeColors.getAverageGrassColor(blockAndTintGetter, blockPos) :
                                         GrassColor.getDefaultColor()),
-                ModdedBlocks.FERN_CAN);
+                ModdedBlocks.FERN_CAN, Blocks.FERN);
     }
 }
