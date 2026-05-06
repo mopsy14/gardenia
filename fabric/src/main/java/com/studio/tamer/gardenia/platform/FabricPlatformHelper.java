@@ -12,7 +12,6 @@ import java.util.function.Function;
 import java.util.function.Supplier;
 
 public class FabricPlatformHelper implements IPlatformHelper {
-
     @Override
     public String getPlatformName() {
         return "Fabric";
